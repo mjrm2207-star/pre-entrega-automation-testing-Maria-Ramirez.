@@ -32,8 +32,7 @@ def test_02_verificar_titulo(driver):
 def test_03_verificar_producto_existente(driver):
 
     inventory_item = driver.find_elements(By.CLASS_NAME, "inventory_item")
-    ##product_name = "Sauce Labs Backpack"
-    ##product_element = driver.find_element(By.XPATH, f"//div[text()='{product_name}']")
+
     assert len(inventory_item) > 0, "Error: No se encontraron productos en inventario"
-   # assert product_element is not None, f"Error: El producto '{product_name}' no se encuentra en la página de inventario"
+
  
